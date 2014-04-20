@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Ng Zhi An</title>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400italic' rel='stylesheet' type='text/css'>
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>
+		* { padding: 0; margin: 0; }
+		body { background-color: #333; }
+		p { color: #fff; font-family: 'PT Sans', 'Helvetica', sans-serif; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		.details a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+		.details a:hover { color: #069EDA; border-bottom: 1px solid rgba(255,255,255,1); }
+		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
+		#projects { width: 360px; padding: 0 0 0 50px; margin: -35px auto 0 50px !important; }
+		#projects ul { list-style: none; }
+		.thumbnail { width: 20%; border: 5px solid #FCFCFC; margin: 5px 5px; }
+		.thumbnail:hover { border: 5px solid #069EDA; }
+		.project { width: 360px; margin: 10px 0px;}
+		.project:after { content: ""; display: block; clear: both;}
+		.project-title { font: italic normal 1.12em serif; font-family: 'PT Serif', serif; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+		.project-desc {}
+		.project:nth-child(even) .details { width: 74%; float: right;}
+		.project:nth-child(odd) .details { width: 74%; float: left;}
+		.internal-link { color:#FFF; text-decoration: none; }
+		.internal-link:hover { color: #069EDA; border-bottom: 1px solid rgba(255,255,255,1); }
+		@media (max-width: 767px) {
+			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
+			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			#projects { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			.project { width: auto; }
+			background-image { opacity: 0.2; }
+		}
+	</style>
+</head>	
+    
+<body>
+
+<!-- swap out for a logo -->
+<div id="monogram">
+	<!-- <img src="monogram.png" /> -->
+</div>
+<div id="projects">
+	<a class="internal-link" href="./index.html">back</a>
+	<ul>
+		<li class="project">
+			<a href="https://github.com/nushackers/git-for-beginners">
+			<img class="thumbnail" src="./hackerschool.png">
+			</a>
+			<div class="details">
+				<a href="https://github.com/nushackers/git-for-beginners">
+				<h3 class="project-title">Git for Beginners Workshop</h3></a>
+				<p class="project-desc">Part of hackerschool, a series of workshops NUS Hackers conduct every semester. I have conducted this twice.</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<a href="https://github.com/ngzhian/hgvis">
+			<img class="thumbnail" src="./hgvis.png">
+			</a>
+			<div class="details">
+				<a href="https://github.com/ngzhian/hgvis">
+				<h3 class="project-title">HgVis</h3></a>
+				<p class="project-desc">A visualization tool for Mercurial commits, with the ability to view commits per dev per day.</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<a href="https://github.com/ngzhian/quickview">
+			<img class="thumbnail" src="./quickview.png">
+			</a>
+			<div class="details">
+				<a href="https://github.com/ngzhian/quickview">
+					<h3 class="project-title">QuickView for YouTube</h3>
+				</a>
+				<p class="project-desc">Chrome plugin to allow you to watch videos by hovering over the thumbnail.</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<a href="http://ngzhian.github.io/any2048/">
+			<img class="thumbnail" src="./any2048.png">
+			</a>
+			<div class="details">
+				<a href="http://ngzhian.github.io/any2048/">
+					<h3 class="project-title">any2048</h3>
+				</a>
+				<p class="project-desc">2048 clone with a twist, lets you add any pictures to replace numbers</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<a href="http://ngzhian.github.io/snowball/">
+				<img class="thumbnail" src="./snowball.png">
+			</a>
+			<div class="details">
+				<a href="https://github.com/ngzhian/snowball">
+					<h3 class="project-title">Snowball</h3>
+				</a>
+				<p class="project-desc">HTML5 + JavaScript game that me and my partner made as part of a summer independent module. Control and snowball rolling down the hill and avoid obstacles!</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<a href="http://morge.yjyao.com">
+			<img class="thumbnail" src="./nusmorge.png">
+			</a>
+			<div class="details">
+				<a href="https://github.com/yyjhao/NUSMorge">
+					<h3 class="project-title">NUSMorge</h3>
+				</a>
+				<p class="project-desc">Timetable merger so you can visualize when schedules clash. Won Best Freshmen Project at Hack n Roll 13.</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<a href="http://github.com/ngzhian/dose">
+			<img class="thumbnail" src="./dose.png">
+			</a>
+			<div class="details">
+				<a href="http://github.com/ngzhian/dose">
+					<h3 class="project-title">Dose</h3>
+				</a>
+				<p class="project-desc">Android app that reminds you to take medicine</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<a href="http://codemirror.net/">
+			<img class="thumbnail" src="./codemirror.jpg	">
+			</a>
+			<div class="details">
+				<a href="http://github.com/ngzhian/codemirror">
+					<h3 class="project-title">CodeMirror</h3>
+				</a>
+				<p class="project-desc">In-browser code editor. I contributed to the code base.</p>
+			</div>
+		</li>
+
+		<li class="project">
+			<img class="thumbnail" src="./ganglia.jpg">
+			<div class="details">
+				<a href="http://ganglia.sourceforge.net/">
+					<h3 class="project-title">Ganglia</h3>
+				</a>
+				<p class="project-desc">Distributed monitoring system, contributed to the upstream libraries.</p>
+			</div>
+		</li>
+
+	</ul>
+</div>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("bg.jpg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>	
+</html>

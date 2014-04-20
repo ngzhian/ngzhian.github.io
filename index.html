@@ -2,8 +2,10 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>N.H.</title>
+	<title>Ng Zhi An</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400italic' rel='stylesheet' type='text/css'>
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
@@ -15,14 +17,27 @@
 	<style>
 		* { padding: 0; margin: 0; }
 		body { background-color: #333; }
-		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		p { color: #fff; font-family: 'PT Sans', 'Helvetica', sans-serif; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
 		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
+		a:hover { color: #069EDA; border-bottom: 1px solid rgba(255,255,255,1); }
 		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
 		#about { width: 360px; padding: 0 0 0 50px; margin: -35px auto 0 50px !important; }
+		#projects { width: 360px; padding: 0 0 0 50px; margin: 0px auto 0 50px !important; }
+		#projects ul { list-style: none; }
+		.thumbnail { width: 20%; border: 5px solid #FCFCFC; margin: 5px 5px; }
+		.project { width: 360px; margin: 10px 0px;}
+		.project:after { content: ""; display: block; clear: both;}
+		/*.project-title { font-family: 'PT Serif', serif;  font: italic normal 1.12em;}*/
+		.project-title { font: italic normal 1.12em serif; font-family: 'PT Serif', serif; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+		/*.project-title {}*/
+		.project-desc {}
+		.project:nth-child(even) .details { width: 74%; float: right;}
+		.project:nth-child(odd) .details { width: 74%; float: left;}
 		@media (max-width: 767px) {
 			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
 			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			#projects { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			.project { width: auto; }
 			background-image { opacity: 0.2; }
 		}
 	</style>
@@ -37,10 +52,12 @@
 
 <!-- swap out for information about yourself -->
 <div id="about">
-	<p><b>Ng Zhi An</b> is a sociable, fun-loving tech geek, who really should spend less time on <a href="http://news.ycombinator.com">Hacker News</a>, <a href="http://www.theverge.com">The Verge</a>, and <a href="http://www.feedly.com">Feedly</a>.</p>
+	<p><b>Ng Zhi An</b> is a sociable, fun-loving tech geek, who really should spend less time on Hacker News, The Verge, and Feedly.</p>
+	<p>I'm currently schooling at <a href="http://nus.edu.sg/">NUS</a>, <a href="http://www.comp.nus.edu.sg/">BComp Computer Science</a>, Year 2, am Chairperson of 
+	<a href="http://www.nussu.org.sg/">NUSSU</a> <a href="http://nussu.org.sg/welfare/">Welfare Committee</a>, and Director of <a href="http://freshmen.nuscomputing.com/">Freshmen Orientation Projects</a> of <a href="nuscomputing.com">SoC</a>.</p>
 	<p>I'm recently into Podcasts, because of how information just seems to diffuse into my brain when I listen to them.</p>
-	<p>My main goal of doing an internship is to get real world experience in building products that people will love and use. I want to <b>hack</b> on software that people can <b>love to use</b>, that can <b>make our world better</b>.</p>
-	<p>People that inspire me include Elon Musk and Bill Gates, because what they are doing now changes the world, and I want this internship to be a step closer towards that goal.</p>
+	<p>I want to <b>hack</b> on software that people can <b>love to use</b>, that can <b>make our world better</b>.</p>
+	<p><a href="./projects.html">See what I've done.</a>
 </div>
 
 <!--include jquery & backstretch-->
