@@ -5,6 +5,7 @@
 	<title>Ng Zhi An</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href="./css/font-awesome.css" rel="stylesheet" type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400italic' rel='stylesheet' type='text/css'>
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
@@ -33,6 +34,7 @@
 		.project-desc {}
 		.project:nth-child(even) .details { width: 74%; float: right;}
 		.project:nth-child(odd) .details { width: 74%; float: left;}
+		.fa { margin: 0 5px 0 0; }
 		@media (max-width: 767px) {
 			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
 			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
@@ -47,7 +49,7 @@
 
 <!-- swap out for a logo -->
 <div id="monogram">
-	<!-- <img src="monogram.png" /> -->
+	<!-- <img src="./img/monogram.png" /> -->
 </div>
 
 <!-- swap out for information about yourself -->
@@ -57,7 +59,15 @@
 	<a href="http://www.nussu.org.sg/">NUSSU</a> <a href="http://nussu.org.sg/welfare/">Welfare Committee</a>, and Director of <a href="http://freshmen.nuscomputing.com/">Freshmen Orientation Projects</a> of <a href="nuscomputing.com">SoC</a>.</p>
 	<p>I'm recently into Podcasts, because of how information just seems to diffuse into my brain when I listen to them.</p>
 	<p>I want to <b>hack</b> on software that people can <b>love to use</b>, that can <b>make our world better</b>.</p>
-	<p><a href="./projects.html">See what I've done.</a>
+	<p><a href="./projects.html">See what I've done.</a></p>
+	<p class="contact">
+	<a href="http://www.github.com/ngzhian/">
+		<i class="fa fa-github fa-2x"></i>
+	</a>
+	<a href="http://www.linkedin.com/pub/zhi-an-ng/95/31/143">
+		<i class="fa fa-linkedin fa-2x"></i>
+	</a>
+	</p>
 </div>
 
 <!--include jquery & backstretch-->
@@ -67,7 +77,7 @@
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
-             $.backstretch("bg.jpg", {speed: 150});
+             $.backstretch("./img/bg.jpg", {speed: 150});
          }
       })
       .resize();//trigger resize on page load
