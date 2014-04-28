@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Ng Zhi An</title>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400italic' rel='stylesheet' type='text/css'>
+	<link href="./css/font-awesome.css" rel="stylesheet" type='text/css'>
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+		* { padding: 0; margin: 0; }
+		body { background-color: #333; font-size: 1em; }
+		p { color: #fff; font-family: 'PT Sans', 'Helvetica', sans-serif; margin-bottom: 22px; line-height: 1.7em; }
+		a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+		a:hover { color: #b1d631; border-bottom: 1px solid #b1d631; }
+		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
+		#ps { width: 520px; padding: 3.6em; margin: 0px auto 0 3em !important; font-size: 1.2em; background-color: rgba(30, 30, 30, 0.8); }
+		.fa { margin: 0 5px 0 0; }
+        .contact a { border: none; }
+		@media (max-width: 767px) {
+			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
+			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			background-image { opacity: 0.2; }
+		}
+	</style>
+</head>
+
+<body>
+
+<!-- swap out for a logo -->
+<div id="monogram">
+	<!-- <img src="./img/monogram.png" /> -->
+</div>
+
+<!-- swap out for information about yourself -->
+<div id="ps">
+  <p>
+  I’m a <b>sociable</b>, <b>fun-loving</b>, <b>tech geek</b>, who really should spend less time on Hacker News, The Verge, and Feedly.
+  I’m recently into Podcasts, because of how information just seems to diffuse into my brain when I listen to them.
+  My main goal of doing an internship is to get <b>real world experience</b> in building products that people will <b>love</b> and <b>use</b>.
+  I want to hack on software that makes people <b>happy</b>, that can <b>make our world better</b>.
+  </p>
+  <p>
+  I believe that the only way to learn is <b>constantly</b> and <b>fiercely</b>, that is why I always try to pick up new skills and level up my abilities.
+  I took up a <b>technical internship</b> before entering University to prepare myself and get started on programming.
+  My mentor gave me the chance to <b>explore</b> widely, and I learned about NoSQL, Java, Linux and Bash.
+  During University, I found spare time to learn beyond the curriculum.
+  My adventures range from reading books like SICP, to taking up courses online – at Udacity I learned about HTML5 Game Development and Design of Computer Programs.
+  Theory isn’t sufficient,so I always try to apply what I learn, by building small projects.
+  Of my projects, I have built Python applications on Google App Engine, console-based games on ncurses, Chrome extension, nodejs applications and d3.js libraries for visualizations.
+  I’m currently dabbling in Haskell, and hope to try my hands on building something useful soon!
+  </p>
+  <p>
+  In school, I am part of <b>NUS Hackers</b>, an interest group whose goal is to spread the <b>hacker culture</b>.
+  I really like the hacker culture, and I believe that technology would not be at the level today if not for this.
+  As a member of the core team, my biggest project is <b>Hacker School</b>, a 4-part workshop that we run every semester.
+  Through this workshop, we try to help participants who are interested in programming get started.
+  I conduct the workshop on Git, and my challenge is to teach a very technical tool to an audience of varied demographics.
+  Other commitments include organizing an annual hackathon,and assisting with a weekly meet-up session.
+  Joining this group has made me realize the importance of hacking on software for fun and to always be hungry for knowledge.
+  </p>
+  <p>
+  The <b>open source</b> movement is going very strong, and it would be great if I can do something open source as well.
+  My GitHub profile lists some projects that I have open sourced, and also some contributions I have made.
+  These include commits to reciprocate, CodeMirror, gmetric4j, jmxetric.
+  The regretful thing is that most of these are either one time contribution as part of applications to Google Summer of Code, or unmaintained projects.
+  I hope to change this, and be more involved in an open source project, by joining one, or starting one of my own because I think open source has great benefits to the society.
+  </p>
+  <p>
+  In all, I want to build software that has an impact, work with fun-loving people who love learning and hacking, and be constantly challenged.
+  </p>
+
+  <p><a href="./projects.html">See what I've done.</a></p>
+  <p><a href="./index.html">back</a></p>
+  <p class="contact">
+  <a href="http://www.github.com/ngzhian/">
+    <i class="fa fa-github fa-2x"></i>
+  </a>
+  <a href="http://www.linkedin.com/pub/zhi-an-ng/95/31/143">
+    <i class="fa fa-linkedin fa-2x"></i>
+  </a>
+  <a href="http://ngzhian.wordpress.com">
+    <i class="fa fa-comment fa-2x"></i>
+  </a>
+  </p>
+</div>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("./img/bg.jpg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>
+</html>
