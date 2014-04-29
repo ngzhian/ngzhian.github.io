@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Ng Zhi An</title>
+	<title>Ng Zhi An - Résumé</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400italic' rel='stylesheet' type='text/css'>
@@ -17,18 +17,20 @@
 	<![endif]-->
 	<style>
 		* { padding: 0; margin: 0; }
-		body { background-color: #333; font-size: 1em; }
-		p { color: #fff; font-family: 'PT Sans', 'Helvetica', sans-serif; margin-bottom: 22px; line-height: 1.7em; }
-		a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #b1d631; border-bottom: 1px solid #b1d631; }
+		body { background-color: #333; font-size: 1em; font-family: 'PT Sans', 'Helvetica', sans-serif; color: #fff; }
+        h2 { font-size: 1.3em; font-family: 'PT Serif', serif; line-height: 2.0em; }
+		p { margin-bottom: 22px; line-height: 1.7em; }
+		.links a { color: #b1d631; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.3); }
+		.links a:hover { background-color: #b1d631; color: #303030; }
 		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-		#ps { width: 520px; padding: 3.6em; margin: 0px auto 0 3em !important; font-size: 1.2em; background-color: rgba(30, 30, 30, 0.8); }
+		#ps { width: 960px; padding: 3.6em; margin: auto auto !important; font-size: 1.2em; background-color: rgba(30, 30, 30, 0.8); }
+        #ps .links a{ margin: 0 2em 0 0; }
 		.fa { margin: 0 5px 0 0; }
-        .contact a { border: none; }
+        .contact a { text-decoration: none; border: none; color: #fff; }
+        .contact a:hover { color: #b1d631; }
 		@media (max-width: 767px) {
 			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
-			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-			background-image { opacity: 0.2; }
+			#ps { position: relative; width: auto; padding: 20px; margin: 0 !important; }
 		}
 	</style>
 </head>
@@ -40,8 +42,15 @@
 	<!-- <img src="./img/monogram.png" /> -->
 </div>
 
-<!-- swap out for information about yourself -->
 <div id="ps">
+  <div class="links">
+    <a href="resume.html">Personal Statement</a>
+    <a href="exp.html">Experience & Achievements</a>
+    <a href="courses.html">Courses</a>
+    <a href="skills.html">Skills</a>
+    <a href="index.html">back</a>
+  </div>
+  <h2>Personal Statement</h2>
   <p>
   I’m a <b>sociable</b>, <b>fun-loving</b>, <b>tech geek</b>, who really should spend less time on Hacker News, The Verge, and Feedly.
   I’m recently into Podcasts, because of how information just seems to diffuse into my brain when I listen to them.
@@ -78,19 +87,21 @@
   In all, I want to build software that has an impact, work with fun-loving people who love learning and hacking, and be constantly challenged.
   </p>
 
-  <p><a href="./projects.html">See what I've done.</a></p>
-  <p><a href="./index.html">back</a></p>
-  <p class="contact">
-  <a href="http://www.github.com/ngzhian/">
-    <i class="fa fa-github fa-2x"></i>
-  </a>
-  <a href="http://www.linkedin.com/pub/zhi-an-ng/95/31/143">
-    <i class="fa fa-linkedin fa-2x"></i>
-  </a>
-  <a href="http://ngzhian.wordpress.com">
-    <i class="fa fa-comment fa-2x"></i>
-  </a>
-  </p>
+  <div class="links">
+    <p><a href="./index.html">back</a></p>
+  </div>
+
+  <div class="contact">
+    <a href="http://www.github.com/ngzhian/">
+      <i class="fa fa-github fa-2x"></i>
+    </a>
+    <a href="http://www.linkedin.com/pub/zhi-an-ng/95/31/143">
+      <i class="fa fa-linkedin fa-2x"></i>
+    </a>
+    <a href="http://ngzhian.wordpress.com">
+      <i class="fa fa-comment fa-2x"></i>
+    </a>
+  </div>
 </div>
 
 <!--include jquery & backstretch-->
