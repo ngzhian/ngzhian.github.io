@@ -10,46 +10,46 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="robots" content="all" />
     <meta name="MSSmartTagsPreventParsing" content="true" />
-    <meta http-equiv="imagetoolbar" content="false" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <style>
-      * { padding: 0; margin: 0; }
-      body { background-color: #333; font-size: 1em; }
+      body {
+	background-color: #fcfcfc;
+	font-size: 16px;
+	font-family: 'PT Sans', 'Helvetica', sans-serif;
+	color: #333; padding: 2em 1em;
+      }
+      .content {
+	max-width: 540px;
+	margin: auto;
+	font-size: 135%;
+      }
+      .links a, .details a{
+	color: #9FBF2E;
+      }
+      .links a:hover, .details a:hover {
+	font-weight: bold;
+      }
+     .contact a {
+       text-decoration: none;
+       color: #333;
+       }
+     .contact a:hover {
+       color: #b1d631;
+     }
       .project-title a { font-family: 'PT Serif', serif; font-weight: normal; font-size: 1.2em; }
-      p { color: #fff; font-family: 'PT Sans', 'Helvetica', sans-serif; font-size: 1em; margin-bottom: 22px; }
-      .links a, .details a { color: #b1d631; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.3); }
-      .links a:hover, .details a:hover { background-color: #b1d631; color: #303030; }
-      .contact a { text-decoration: none; border: none; color: #fff; }
-      .contact a:hover { color: #b1d631; }
-      #monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-      #projects { width: 960px; padding: 4em; margin: auto auto !important; background-color: rgba(30, 30, 30, 0.8); }
-      #projects ul { list-style: none; }
+      #projects ul {
+	list-style: none;
+	padding-left: 0;
+      }
       .thumbnail { width: 20%; border: 5px solid #FCFCFC; margin: 5px 5px; }
       a.thumbnail-link { border: none; }
       a.thumbnail-link:hover .thumbnail { border: 5px solid #b1d631; }
-      .details { width: 70%; }
-      .project { margin: 2em 0; }
       .project:after { content: ""; display: block; clear: both;}
-      .project:nth-child(even) .details { width: 74%; float: right;}
-      .project:nth-child(odd) .details { width: 74%; float: left;}
-      @media (max-width: 767px) {
-        #monogram { position: relative; width: auto; padding: 20px; margin: 0; }
-        #projects { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-        .project { width: auto; }
-      }
     </style>
   </head>
 
   <body>
-
-    <!-- swap out for a logo -->
-    <div id="monogram">
-      <!-- <img src="monogram.png" /> -->
-    </div>
-    <div id="projects">
+    <div class="content" id="projects">
       <p class="links">
       <a href="./index.html">back</a>
       </p>
@@ -85,29 +85,29 @@
 	</li>
 
         <li class="project">
-        <a class="thumbnail-link" href="https://github.com/ngzhian/quickview">
-          <img class="thumbnail" src="./img/quickview.png">
-        </a>
         <div class="details">
           <h3 class="project-title">
             <a href="https://github.com/ngzhian/quickview">
               QuickView for YouTube
             </a>
           </h3>
+        <a class="thumbnail-link" href="https://github.com/ngzhian/quickview">
+          <img class="thumbnail" src="./img/quickview.png">
+        </a>
           <p class="project-desc">Chrome plugin to allow you to watch videos by hovering over the thumbnail.</p>
         </div>
         </li>
 
         <li class="project">
-        <a class="thumbnail-link" href="https://github.com/nushackers/git-for-beginners">
-          <img class="thumbnail" src="./img/hackerschool.png">
-        </a>
         <div class="details">
           <h3 class="project-title">
             <a href="https://github.com/nushackers/git-for-beginners">
               Git for Beginners Workshop
             </a>
           </h3>
+        <a class="thumbnail-link" href="https://github.com/nushackers/git-for-beginners">
+          <img class="thumbnail" src="./img/hackerschool.png">
+        </a>
           <p class="project-desc">
           Part of hackerschool, a series of workshops NUS Hackers conduct every semester. I have conducted this twice.
           </p>
@@ -115,85 +115,71 @@
         </li>
 
         <li class="project">
-        <a class="thumbnail-link" href="https://github.com/ngzhian/hgvis">
-          <img class="thumbnail" src="./img/hgvis.png">
-        </a>
         <div class="details">
           <h3 class="project-title">
             <a href="https://github.com/ngzhian/hgvis">
               HgVis
             </a>
           </h3>
+        <a class="thumbnail-link" href="https://github.com/ngzhian/hgvis">
+          <img class="thumbnail" src="./img/hgvis.png">
+        </a>
           <p class="project-desc">A visualization tool for Mercurial commits, with the ability to view commits per dev per day.</p>
         </div>
         </li>
 
         <li class="project">
-        <a class="thumbnail-link" href="http://ngzhian.github.io/any2048/">
-          <img class="thumbnail" src="./img/any2048.png">
-        </a>
         <div class="details">
           <h3 class="project-title">
             <a href="http://ngzhian.github.io/any2048/">
               any2048
             </a>
           </h3>
+        <a class="thumbnail-link" href="http://ngzhian.github.io/any2048/">
+          <img class="thumbnail" src="./img/any2048.png">
+        </a>
           <p class="project-desc">2048 clone with a twist, lets you add any pictures to replace numbers</p>
         </div>
         </li>
 
         <li class="project">
-        <a class="thumbnail-link" href="http://ngzhian.github.io/snowball/">
-          <img class="thumbnail" src="./img/snowball.png">
-        </a>
         <div class="details">
           <h3 class="project-title">
             <a href="https://github.com/ngzhian/snowball">
               Snowball
             </a>
           </h3>
+        <a class="thumbnail-link" href="http://ngzhian.github.io/snowball/">
+          <img class="thumbnail" src="./img/snowball.png">
+        </a>
           <p class="project-desc">HTML5 + JavaScript game that me and my partner made as part of a summer independent module. Control and snowball rolling down the hill and avoid obstacles!</p>
         </div>
         </li>
 
         <li class="project">
-        <a class="thumbnail-link" href="http://morge.yjyao.com">
-          <img class="thumbnail" src="./img/nusmorge.png">
-        </a>
         <div class="details">
           <h3 class="project-title">
             <a href="https://github.com/yyjhao/NUSMorge">
               NUSMorge
             </a>
           </h3>
+        <a class="thumbnail-link" href="http://morge.yjyao.com">
+          <img class="thumbnail" src="./img/nusmorge.png">
+        </a>
           <p class="project-desc">Timetable merger so you can visualize when schedules clash. Won Best Freshmen Project at Hack n Roll 13.</p>
         </div>
         </li>
 
         <li class="project">
-        <a class="thumbnail-link" href="http://codemirror.net/">
-          <img class="thumbnail" src="./img/codemirror.jpg ">
-        </a>
-        <div class="details">
-          <h3 class="project-title">
-            <a href="http://github.com/ngzhian/codemirror">
-              CodeMirror
-            </a>
-          </h3>
-          <p class="project-desc">In-browser code editor. I contributed to the code base.</p>
-        </div>
-        </li>
-
-        <li class="project">
-        <a class="thumbnail-link" href="http://ganglia.sourceforge.net/">
-          <img class="thumbnail" src="./img/ganglia.jpg">
-        </a>
         <div class="details">
           <h3 class="project-title">
             <a href="http://ganglia.sourceforge.net/">
               Ganglia
             </a>
           </h3>
+        <a class="thumbnail-link" href="http://ganglia.sourceforge.net/">
+          <img class="thumbnail" src="./img/ganglia.jpg">
+        </a>
           <p class="project-desc">Distributed monitoring system, contributed to the upstream libraries.</p>
         </div>
         </li>
@@ -215,20 +201,5 @@
         </a>
       </div>
     </div>
-
-    <!--include jquery & backstretch-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-          $(window).resize(function(){
-            if($(this).width() >= 767){
-            $.backstretch("./img/bg.jpg", {speed: 150});
-            }
-            })
-          .resize();//trigger resize on page load
-          });
-</script>
-
-      </body>
-    </html>
+  </body>
+</html>
