@@ -3,7 +3,7 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
  <title>Ng Zhi An - Goals for 2018</title>
- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
  <meta http-equiv="pragma" content="no-cache" />
  <meta name="robots" content="all" />
  <meta name="MSSmartTagsPreventParsing" content="true" />
@@ -12,16 +12,12 @@
   body {
     background-color: #fcfcfc;
     font-size: 16px;
-    font-family: 'PT Sans', 'Helvetica', sans-serif;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
     color: #333; padding: 2em 1em;
   }
   .content {
     max-width: 720px;
     margin: auto;
-    font-size: 135%;
-  }
-  .headline {
-    font-size: 120%;
   }
   a {
     color: #9FBF2E;
@@ -36,7 +32,19 @@
     color: #5B5;
   }
   table {
+    border-collapse: collapse;
     width: 100%;
+  }
+  thead th {
+    border-bottom: 2px solid #eee
+  }
+  tbody td {
+    padding: .75rem;
+    border-top: 1px solid #eee;
+  }
+  .footnotes {
+    color: #888;
+    font-size: smaller;
   }
  </style>
 </head>
@@ -45,18 +53,23 @@
   <div class="content">
     <h2>Run the distance of a full marathon (26.2 miles) over a week, every week</h2>
     <table>
-      <tr>
-        <th>Week</th>
-        <th>M</th>
-        <th>T</th>
-        <th>W</th>
-        <th>T</th>
-        <th>F</th>
-        <th>S</th>
-        <th>S</th>
-        <th>Total</th>
-        <th>Status</th>
-      </tr>
+
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>M</th>
+          <th>T</th>
+          <th>W</th>
+          <th>T</th>
+          <th>F</th>
+          <th>S</th>
+          <th>S</th>
+          <th>Total</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
 
       <tr>
         <td>1 (1/1)</td>
@@ -233,11 +246,11 @@
         <td>5.10</td>
         <td>5.50</td>
         <td>6.02</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>23</td>
-        <td>?</td>
+        <td>5.02</td>
+        <td>[11]</td>
+        <td>[11]</td>
+        <td>27.98</td>
+        <td class="pass">Pass</td>
       </tr>
 
       <tr>
@@ -253,26 +266,36 @@
         <td>?</td>
       </tr>
 
+      </tbody>
+
     </table>
 
-    <p>[1] Went snowboarding</p>
-    <p>[2] Ran up and down mission peak</p>
-    <p>[3] Went snowboarding</p>
-    <p>[4] Went snowboarding</p>
-    <p>[5] On a plane</p>
-    <p>[6] Went snowboarding</p>
-    <p>[7] Went snowboarding</p>
-    <p>[8] Went snowboarding</p>
-    <p>[9] Went snowboarding</p>
-    <p>[10] Went snowboarding</p>
+    <section class="footnotes">
+      <p>[1] Went snowboarding</p>
+      <p>[2] Ran up and down mission peak</p>
+      <p>[3] Went snowboarding</p>
+      <p>[4] Went snowboarding</p>
+      <p>[5] On a plane</p>
+      <p>[6] Went snowboarding</p>
+      <p>[7] Went snowboarding</p>
+      <p>[8] Went snowboarding</p>
+      <p>[9] Went snowboarding</p>
+      <p>[10] Went snowboarding</p>
+      <p>[11] Went snowboarding</p>
+    </section>
 
     <h2>Read a paper or book every two weeks</h2>
     <table>
 
+      <thead>
       <tr>
         <th>Week (ending)</th>
         <th>Paper/Book</th>
       </tr>
+      </thead>
+
+      <tbody>
+
       <tr>
         <td>2 (1/11)</td>
         <td>
@@ -386,10 +409,25 @@
       </tr>
 
       <tr>
-        <td>16 (4/19)</td>
+        <td rowspan="2">16 (4/19)</td>
         <td>
+          <a href="https://www.goodreads.com/book/show/714583.The_Man_Who_Loved_Only_Numbers">
+            The Man Who Loved Only Numbers: The Story of Paul Erdős and the Search for Mathematical Truth
+          </a>
+          by Paul Hoffman
         </td>
       </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.goodreads.com/book/show/281818.Where_Wizards_Stay_Up_Late">
+            Where Wizards Stay Up Late: The Origins of the Internet
+          </a>
+          by Katie Hafner, Matthew Lyon
+        </td>
+      </tr>
+
+      </tbody>
 
     </table>
 
